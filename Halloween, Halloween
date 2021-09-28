@@ -11,7 +11,7 @@
             :root {
                 --font-for-names: "Iceland";
                 --font-for-instructions: "Iceland";
-                --front-background-image: url("Clue Template 2.jpg");
+                --front-background-image: url("halloween0.png");
                 --front-font-color: black;
                 --back-background-image: url("");
                 --back-font-color: white;
@@ -93,7 +93,7 @@
                 opacity: 0.5;
                 outline: 0;
             }
-            .person-picker {
+            <!--.person-picker {
                 background: #FFF;
                 font-size: 0.875rem;
                 height: 100vh;
@@ -121,7 +121,7 @@
             }
             input[type="radio"]:checked + span {
                 color: #3A63D2;
-            }
+            }-->
             .card-container {
                 align-items: center;
                 display: flex;
@@ -221,9 +221,9 @@
                     height: 24rem;
                 }
                 .card-back,
-                .person-picker {
+               !<-- .person-picker {
                     font-size: 1rem;
-                }
+                } -->
                 .card-flip-trigger:hover ~ .card-front {
                     transform: translate(-50%, -50%) rotate3d(0, 1, 0, -180deg);
                 }
@@ -257,7 +257,7 @@
         </style>
     </head>
     <body>
-        <div id="main">
+        !<-- <div id="main">
             <div class="person-picker" :class="{'modal-hidden': modalHidden}">
                 <h2>Who are you?</h2>
                 <p>Please pick your name from the list below:</p>
@@ -267,7 +267,7 @@
                 </label>
                 <hr />
                 <button v-on:click="showInstructions" :disabled="personIsEmpty">Continue</button>
-            </div>
+            </div> -->
             <div class="flippy-flip">
                 <button v-on:click="doFlippyThing">
                     <span v-if="cardIsFlippyFlipped">
