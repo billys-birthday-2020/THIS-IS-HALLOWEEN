@@ -11,7 +11,7 @@
         <style>
             /* Change these things: */
             :root {
-                --font-for-names: "Fleur De Leah";
+                --font-for-names: "Are You Serious";
                 --font-for-instructions: "Special Elite";
                 --front-background-image: url("halloween0.png");
                 --front-font-color: white;
@@ -261,7 +261,7 @@
     <body>
         <div id="main">
             <div class="person-picker" :class="{'modal-hidden': modalHidden}">
-                <h2>Who are you?</h2>
+                <h2>Everyone Hail to the Pumpkin King</h2>
                 <p>Click on Halloween & Housewarming pretty please:</p>
                 <label class="guest-list-item" v-for="(person, index) in guests">
                     <input v-model="currentPerson" :value="index" name="guestPicker" type="radio">
@@ -318,7 +318,14 @@
                                 "Please join us for a Potluck Halloween! Come with your best costume, and prepare to be judged by your peers.",
 				"4600 Roswell Rd Building H #566, Sandy Springs, GA 30342",
 				"Use Gate Code 013 upon arrival",
-				"Please let us know if you can make it by Oct 15"
+				"Please let us know if you can make it by Oct 15 && coordinate with Emily (256-636-1347) for the Potluck!"
+                            ]
+                        },
+			// START OF GUEST
+                        {
+                            name: "I can't follow Instructions",
+                            instructions: [
+                                "Sucks for you. Go back and click on Halloween & Housewarming. :)"
                             ]
                         },
                         
