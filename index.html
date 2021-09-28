@@ -12,7 +12,7 @@
                 --font-for-names: "Iceland";
                 --font-for-instructions: "Iceland";
                 --front-background-image: url("halloween0.png");
-                --front-font-color: black;
+                --front-font-color: white;
                 --back-background-image: url("");
                 --back-font-color: white;
             }
@@ -260,7 +260,7 @@
         <div id="main">
             <div class="person-picker" :class="{'modal-hidden': modalHidden}">
                 <h2>Who are you?</h2>
-                <p>Please pick your name from the list below:</p>
+                <p>Click on Halloween & Housewarming pretty please:</p>
                 <label class="guest-list-item" v-for="(person, index) in guests">
                     <input v-model="currentPerson" :value="index" name="guestPicker" type="radio">
                     <span>{{ person.name }}</span>
@@ -311,163 +311,15 @@
                     guests: [
                         // START OF GUEST
                         {
-                            name: "Ben & Sarah",
+                            name: "Halloween & Housewarming",
                             instructions: [
-                                "Please be at The Collection Apartments before 6pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 upon arrival",
-				"Please do not use the gate code. Doyin will let you in to park."
+                                "Please join us for a Potluck Halloween! Come with your best costume, and prepare to be judged by your peers.",
+				"4600 Roswell Rd Building H #566, Sandy Springs, GA 30342",
+				"Use Gate Code 013 upon arrival",
+				"Please let us know if you can make it by Oct 15"
                             ]
                         },
-                        // END OF GUEST
-			// START OF GUEST
-                        {
-                            name: "Brooks Draughn",
-                            instructions: [
-                                "Arrive at Piedmont Park (in the meadow behind Park Tavern) by 5:00 pm. We plan to be there about 5:08 pm",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"Please do not use the gate code. Doyin will let you in to park."
-                            ]
-                        },
-                        // END OF GUEST
-			// START OF GUEST
-                        {
-                            name: "Chase Davani",
-                            instructions: [
-                                "Arrive at Atlanta Kick by 5:25 pm. We plan to be there about 5:30 pm",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"Please do not use the gate code. Doyin will let you in to park."
-                            ]
-                        },
-                        // END OF GUEST
-			// START OF GUEST
-                        {
-                            name: "Dalton Mayes",
-                            instructions: [
-                                "Please be at The Collection Apartments before 6pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 upon arrival",
-				"Please do not use the gate code. Doyin will let you in to park."
-                            ]
-                        },
-                        // END OF GUEST
-                        // START OF GUEST
-                        {
-                            name: "Daniel Baggerman",
-                            instructions: [
-                                "We will pick you up around 3:30 pm",
-                                "We will get to the Beech Valley House about 4:10 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"You can ride with us the rest of the Hunt :)"
-			    ]
-                        },
-                        // END OF GUEST
-                        // START OF GUEST
-                        {
-                            name: "Derek & Alyssa",
-                            instructions: [
-                                "Arrive at Haygood Church by 3:55 pm. We plan to be there about 4:04 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"Please do not use the gate code. If you arrive before 5:30, Jeremy (206-257-8206) will let you in to park. Otherwise, call Doyin"
-                            ]
-                        },
-                        // END OF GUEST
-			 // START OF GUEST
-                        {
-                            name: "Donald Lockwood",
-                            instructions: [
-                                "Please be at The Collection Apartments before 6pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 upon arrival",
-				"Please do not use the gate code. Doyin will let you in to park."
-                            ]
-                        },
-                        // END OF GUEST
-                        // START OF GUEST
-                        {
-                            name: "Doyin Oladimeji",
-                            instructions: [
-                                "Let's meet at Billy's early. We can discuss when.",
-				"Leave for George's when we do (about 3:20 pm). Billy and I will stop to get Danny.",
-                                "We plan to be there about 3:55 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Handle set-up and questions, yay :)"
-                            ]
-                        },
-                        // END OF GUEST
-			// START OF GUEST
-                        {
-                            name: "Jeremy & Paige",
-                            instructions: [
-                                "Please be at The Collection Apartments about 4:30pm to hold down the fort.",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342",
-				"Call Brooks upon arrival",
-				"Please do not use the gate code. Brooks will let you in to park.",
-				"THANK YOU"
-                            ]
-                        },
-                        // END OF GUEST
-                        // START OF GUEST
-                        {
-                            name: "Kevin Giblin",
-                            instructions: [
-                                "Arrive at Grady High School by 4:30 pm. We plan to be there about 4:34 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"Please do not use the gate code. If you arrive before 5:30, Jeremy (206-257-8206) will let you in to park. Otherwise, call Doyin."
-                            ]
-                        },
-                        // END OF GUEST
-                        // START OF GUEST
-                        {
-                            name: "Matt & Brook",
-                            instructions: [
-                                "Arrive at Daniel Johnson Nature Preserve by 4:10 pm. We plan to be there about 4:18 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"Please do not use the gate code. If you arrive before 5:30, Jeremy (206-257-8206) will let you in to park. Otherwise, call Doyin"
-                            ]
-                        },
-                        // END OF GUEST
-			// START OF GUEST
-                        {
-                            name: "Quanisha Madison",
-                            instructions: [
-                                "Arrive at Georgia State (Woodruff Park) by 4:45 pm. We plan to be there about 4:51 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"Please do not use the gate code. Doyin will let you in to park."
-                            ]
-                        },
-                        // END OF GUEST
-			// START OF GUEST
-                        {
-                            name: "Sam & Adela",
-                            instructions: [
-                                "Arrive at Knuckle Up by 5:45 pm. We plan to be there about 5:53 pm.",
-                                "Give Billy his clue! The clue will be provided to you prior.",
-				"Please be at The Collection Apartments before 6 pm so we can surprise Billy!",
-				"4600 Roswell Rd Building H, Sandy Springs, GA 30342.",
-				"Call Emily 256-636-1347 or Doyin 404-579-8167 for help.",
-				"We will let you in the gate. Knuckle Up is literally steps away."
-                            ]
-                        },
-                        // END OF GUEST
+                        
 			
                     ],
                     currentPerson: 0,
