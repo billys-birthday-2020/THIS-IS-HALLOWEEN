@@ -342,7 +342,7 @@
                     <ul v-if="guests[currentPerson].name === 'Halloween & Housewarming'" class="instructions">
                         <li>Please join us for a Potluck Halloween on <strong class="highlight">October 30th at 7:00pm</strong>!</li>
                         <li>Come with your best costume, and prepare to be judged by your peers... there will be <strong class="highlight">prizes</strong>!</li>
-                        <li>Coordinate with Emily (<strong class="highlight">256-636-1347</strong>) for the Potluck!</li>
+                        <li>Coordinate with Emily (<strong class="highlight">{{ phoneNumbah }}</strong>) for the Potluck!</li>
                         <li>Please let us know if you can make it by <strong class="highlight">Oct 15</strong>.</li>
                         <li>4600 Roswell Rd Building H #566, Sandy Springs, GA 30342. Use gate code <strong class="highlight">013</strong> upon arrival.</li>
                     </ul>
@@ -390,7 +390,8 @@
                     currentPerson: 0,
                     currentInstructions: [],
                     modalHidden: false,
-                    cardIsFlippyFlipped: false
+                    cardIsFlippyFlipped: false,
+                    phoneNumbah: '256-636-1347'
                 },
                 computed: {
                     personIsEmpty() {
